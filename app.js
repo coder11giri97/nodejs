@@ -1,5 +1,5 @@
 const path = require('path');
-
+const db = require("./util/database");
 const express = require('express');
 const bodyParser = require('body-parser');
 
@@ -22,4 +22,3 @@ app.use(shopRoutes);
 app.use(errorController.get404);
 
 app.listen(3000);
-
